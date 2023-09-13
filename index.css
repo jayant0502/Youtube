@@ -4,6 +4,7 @@
   padding: 0%;
   margin: 0%;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 body {
   /* font-family: 'Arimo', sans-serif; */
@@ -48,15 +49,12 @@ body::-webkit-scrollbar-{
 .end {
   display: flex;
   align-items: center;
-  /* flex-shrink: 1; */
+  justify-content: space-between;
 
 }
-.start {
-  justify-content: space-evenly;
-}
-/* #logo-img {
-  padding: 2px 110px;
-} */
+/* .start {
+  justify-content: space-around;
+} 
 .center {
   flex: 0 1 600px;
   justify-self: center;
@@ -67,7 +65,7 @@ body::-webkit-scrollbar-{
 .end {
   flex: 0 200px;
   justify-content: flex-end;
-}
+} */
 #logo-img {
   padding: 2px 20px;
   width: 150px;
@@ -169,10 +167,11 @@ body::-webkit-scrollbar-{
 }
 .sidebar-container {
   width: 280px;
-  height: 100%;
+  height:calc(100% - 60px);
   background-color: white;
   z-index: 1;
-  overflow-y: scroll;
+  overflow-y: auto;
+  
 }
 
 .side-icon:hover,
